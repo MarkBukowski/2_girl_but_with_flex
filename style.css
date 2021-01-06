@@ -13,10 +13,9 @@ body {
 
 .topList {
     list-style-type: none;
-    width: 40%;
+    width: 50%;
     font-size: 1em;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -24,6 +23,7 @@ body {
 .topList a {
     text-decoration: none;
     color: #9F9F9F;
+    padding: 0 5px;
 }
 
 .topList a:hover {
@@ -34,6 +34,7 @@ body {
     border: 3px solid #817f7f;
     border-radius: 1.3em;
     padding: 3px 20px;
+    text-transform: uppercase;
 }
 
 .mainSection {
@@ -57,4 +58,36 @@ h1 {
 .girlImg {
     width: 50%;
     margin-right: 5%;
+}
+
+
+@media only screen and (max-width: 925px){
+    .topList {
+        width: 80%;
+    }
+    .text {
+        font-size: 1.5em;
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .topList {
+        font-size: 0.8em;
+    }
+    .mainSection {
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .text {
+        font-size: 2em;
+        width: 80%;
+    }
+    .signButton {
+        width: 60%;
+    }
 }
