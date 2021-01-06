@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #9F9F9F;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 5%;
+}
+
+.topList {
+    list-style-type: none;
+    width: 40%;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topList a {
+    text-decoration: none;
+    color: #9F9F9F;
+}
+
+.topList a:hover {
+    color: #6b6a6a;
+}
+
+.signButton {
+    border: 3px solid #817f7f;
+    border-radius: 1.3em;
+    padding: 3px 20px;
+}
+
+.mainSection {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text {
+    font-size: 2em;
+    margin: 0 0 0 10%;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 0.5em;
+}
+
+.girlImg {
+    width: 50%;
+    margin-right: 5%;
+}
