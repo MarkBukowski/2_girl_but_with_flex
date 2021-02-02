@@ -13,17 +13,18 @@ body {
 
 .topList {
     list-style-type: none;
-    width: 50%;
-    font-size: 1em;
+    width: 80%;
+    font-size: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.topList a {
+.topList, a {
     text-decoration: none;
     color: #9F9F9F;
     padding: 0 5px;
+    gap: 20px;
 }
 
 .topList a:hover {
@@ -31,10 +32,19 @@ body {
 }
 
 .signButton {
-    border: 3px solid #817f7f;
-    border-radius: 1.3em;
-    padding: 3px 20px;
+    display: block;
+    border: 4px solid #979797;
+    color: #7a7a7a;
+    border-radius: 17px;
+    padding: 3px 18px;
     text-transform: uppercase;
+}
+
+.signButton:hover {
+    background-color: #777777;
+    color: #fff;
+    border-color: #777;
+    transition: all 0.5s;
 }
 
 .mainSection {
@@ -56,38 +66,41 @@ h1 {
 }
 
 .girlImg {
-    width: 50%;
-    margin-right: 5%;
+    width: 600px;
+    margin-right: 8%;
 }
 
 
 @media only screen and (max-width: 925px){
     .topList {
-        width: 80%;
+        width: 100%;
     }
+
     .text {
         font-size: 1.5em;
+        width: 420px;
+    }
+
+    .girlImg {
+        width: 450px;
+        margin: 0;
+    }
+
+    .mainSection {
+        flex-direction: column-reverse;
     }
 }
 
 
 @media only screen and (max-width: 575px) {
     .topList {
-        font-size: 0.8em;
+        font-size: 14px;
+        width: 100%;
+        gap: 5px;
     }
-    .mainSection {
-        font-size: 0.7em;
-        display: flex;
-        flex-direction: column-reverse;
-    }
+
     h1 {
-        font-size: 3em;
-    }
-    .text {
-        font-size: 2em;
-        width: 80%;
-    }
-    .signButton {
-        width: 60%;
+        font-size: 60px;
+        margin-top: 50px;
     }
 }
